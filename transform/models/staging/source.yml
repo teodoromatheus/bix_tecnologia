@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+  - name: raw_data
+    description: Base de dados brutos armazenados no BigQuery (Raw Data)
+    tables:
+
+      - name: vendas
+        description: tabela de vendas do PostgreSQL
+        columns:
+          - name: id_venda
+            description: Chave primária da tabela vendas
+            tests:
+              - not_null
+              - unique
+          - name: id_funcionario
+            description: Chave primária de funcionários
+            tests:
+              - not null
+          - name: id_categoria
+            description: Chave primária para categoria de produtos
+            tests:
+              - not_null
+          - name: data_venda
+            description: Data da venda
+          - name: venda
+            description: Quantidade de vendas
