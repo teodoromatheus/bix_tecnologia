@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: fact_vendas
+    columns:
+      - name: fk_funcionario
+        description: Foreign Key da dimensão funcionarios
+        tests:
+          - not_null
+      
+      - name: fk_categoria
+        description: Foreign Key da dimensão categorias
+        tests:
+          - not_null

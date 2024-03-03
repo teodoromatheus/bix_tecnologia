@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_categorias
+    columns:
+      - name: sk_categoria
+        description: Surrogate Key da dimensão categorias
+        tests:
+          - unique
+          - not_null

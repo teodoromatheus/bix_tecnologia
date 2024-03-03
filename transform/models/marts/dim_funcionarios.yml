@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_funcionarios
+    columns:
+      - name: sk_funcionario
+        description: Surrogate Key da dimensão funcionarios
+        tests:
+          - unique
+          - not_null
