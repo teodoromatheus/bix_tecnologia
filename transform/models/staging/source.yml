@@ -16,7 +16,7 @@ sources:
           - name: id_funcionario
             description: Chave primária de funcionários
             tests:
-              - not null
+              - not_null
           - name: id_categoria
             description: Chave primária para categoria de produtos
             tests:
@@ -25,3 +25,29 @@ sources:
             description: Data da venda
           - name: venda
             description: Quantidade de vendas
+
+      - name: categorias
+        description: tabela de categorias do arquivo Parquet
+        columns:
+          - name: id
+            description: Chave primária da tabela de categorias
+            tests:
+              - not_null
+              - unique
+          - name: nome_categoria
+            description: Nome da categoria
+            tests:
+              - not_null
+
+      - name: funcionarios
+        description: tabela de funcionários extraídos da API
+        columns:
+          - name: id_funcionario
+            description: Chave primária da tabela de funcionários
+            tests:
+              - not_null
+              - unique
+          - name: nome_funcionario
+            description: Descrição do nome dos funcionários
+            tests:
+              - not_null
