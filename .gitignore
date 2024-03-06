@@ -1,3 +1,7 @@
 .venv
 .vscode
 .env
+logs
+transform/target/
+transform/dbt_packages/
+transform/logs/
