@@ -16,7 +16,7 @@ class APICollector():
         lista = self.getAPI()
         df = self.listToDataframe(lista=lista)
         self.dataframeToCloud(df=df)
-        return df
+        return None
 
     def getAPI(self):
         lista = []
