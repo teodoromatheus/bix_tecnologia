@@ -2048,6 +2048,17 @@ files = [
 pyasn1 = ">=0.1.3"
 
 [[package]]
+name = "schedule"
+version = "1.2.1"
+description = "Job scheduling for humans."
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "schedule-1.2.1-py2.py3-none-any.whl", hash = "sha256:14cdeb083a596aa1de6dc77639a1b2ac8bf6eaafa82b1c9279d3612823063d01"},
+    {file = "schedule-1.2.1.tar.gz", hash = "sha256:843bc0538b99c93f02b8b50e3e39886c06f2d003b24f48e1aa4cadfa3f341279"},
+]
+
+[[package]]
 name = "setuptools"
 version = "69.1.1"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
@@ -2179,4 +2190,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.10.5"
-content-hash = "75abaf29d4c386cf8d6116af6853ca216ba347f3f76ba45011adf3320dbfede4"
+content-hash = "7c4ff1b6e8337d4f9192fc5c0cae75fd3002097fa1db20e7037d13998f21b9d1"
