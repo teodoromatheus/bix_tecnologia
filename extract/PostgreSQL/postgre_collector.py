@@ -1,8 +1,6 @@
 import psycopg2
 import pandas as pd
-import pandas_gbq
 from dotenv import load_dotenv
-import google.cloud
 from google.oauth2 import service_account
 import os
 
@@ -16,7 +14,7 @@ class PostgreCollector():
         conn = self.inputCredentials()
         df = self.tableToDataframe(conexao=conn)
         self.exportToCloud(dataframe=df)
-        return None
+        return True
     
     def inputCredentials(self):
         conexao = psycopg2.connect(

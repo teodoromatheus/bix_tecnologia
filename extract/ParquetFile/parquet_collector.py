@@ -11,7 +11,7 @@ class ParquetFileCollector():
 
     def start(self):
         self.exportToCloud()
-        return None
+        return True
 
     def exportToCloud(self):
         key_path = os.environ.get("GCP_KEY_PATH")

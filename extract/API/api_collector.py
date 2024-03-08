@@ -1,7 +1,6 @@
 import pandas as pd
 from httpx import Client
 from typing import List
-import google.cloud
 from google.oauth2 import service_account
 import os
 from dotenv import load_dotenv
@@ -16,7 +15,7 @@ class APICollector():
         lista = self.getAPI()
         df = self.listToDataframe(lista=lista)
         self.dataframeToCloud(df=df)
-        return None
+        return True
 
     def getAPI(self):
         lista = []
