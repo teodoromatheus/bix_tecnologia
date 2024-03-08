@@ -16,7 +16,7 @@ def run_pipeline():
     os.chdir('transform')
     subprocess.run(['dbt','run'])
 
-schedule.every(2).minutes.do(run_pipeline())
+schedule.every().day.at("20:00").do(run_pipeline())
 
 while True:
     schedule.run_pending()
