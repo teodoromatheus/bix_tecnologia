@@ -6,7 +6,7 @@ with
     select * from {{ ref("dim_funcionarios") }}
     ),
     vendas as (
-    select * from {{ source("raw_data","vendas") }}
+    select * from {{ ref("stg_vendas") }}
     ),
     fato_vendas as (
         select  vendas.id_venda
